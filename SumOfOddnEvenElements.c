@@ -12,11 +12,8 @@ class Solution
 		vector<int> find_sum(int n)
 		{
 		    // Code here
-		    int sum_odd=0;
-		    int sum_even=0;
-		    int i;
 		    vector<int> sum {0, 0};
-		    for (i=1;i<=n;i++){
+		    for (int i=1;i<=n;i++){
 		        if (i%2==0) sum.at(1)+=i;
 		        else sum.at(0)+=i;
 		    }
